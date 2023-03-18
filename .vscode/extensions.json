@@ -1,0 +1,59 @@
+{
+  "recommendations": [
+    // Theme
+    "antfu.icons-carbon", // Carbon Icons
+    "dracula-theme.theme-dracula", // Dracula Theme
+    "PKief.material-icon-theme", // Material Icon Theme
+    // Editor
+    "MS-CEINTL.vscode-language-pack-zh-hans", // 编译器中文语言包
+    // Better Working
+    "formulahendry.auto-close-tag", // 自动闭合标签
+    "steoates.autoimport", // 自动导入
+    "formulahendry.auto-rename-tag", // 自动重命名标签
+    "streetsidesoftware.code-spell-checker", // 拼写检查
+    "naumovs.color-highlight", // 颜色高亮
+    "bierner.color-info", // 颜色信息
+    "usernamehw.errorlens", // 错误提示
+    "donjayamanne.githistory", // Git 历史
+    "GitHub.copilot", // GitHub Copilot
+    "kisstkondoros.vscode-gutter-preview", // 图片预览
+    "wix.vscode-import-cost", // 导入包大小
+    "oderwat.indent-rainbow", // 缩进彩虹
+    "moalamri.inline-fold", // 折叠内联样式
+    "christian-kohler.path-intellisense", // 路径智能提示
+    "cipchk.cssrem", // px 转 rem
+    "wayou.vscode-todo-highlight", // TODO 高亮
+    "shardulm94.trailing-spaces", // 末尾空格
+    "pflannery.vscode-versionlens", // 版本提示
+    "tomoki1207.pdf", // PDF 预览
+    // Markdown
+    "DavidAnson.vscode-markdownlint", // Markdown Lint
+    "unifiedjs.vscode-mdx", // MDX
+    //HTML
+    "ecmel.vscode-html-css", // HTML CSS Support
+    // JavaScript
+    "mgmcdermott.vscode-language-babel", // Babel
+    "mikestead.dotenv", // .env
+    // React
+    "clinyong.vscode-css-modules", // CSS Modules
+    // Vue
+    "Vue.vscode-typescript-vue-plugin", // TypeScript Vue Plugin
+    "Vue.volar", // Volar
+    // Frameworks
+    "astro-build.astro-vscode", // Astro
+    "Prisma.prisma", // Prisma
+    // Others
+    "EditorConfig.EditorConfig", // Editor Config
+    "dbaeumer.vscode-eslint", // ESLint
+    "vunguyentuan.vscode-postcss", // PostCSS IntelliSense And Highlight
+    "csstools.postcss", // PostCSS
+    "esbenp.prettier-vscode", // Prettier
+    "rvest.vs-code-prettier-eslint", // Prettier ESLint
+    "sibiraj-s.vscode-scss-formatter", // SCSS Formatter
+    "stylelint.vscode-stylelint", // Stylelint
+    "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
+    // Up To You
+    "hoovercj.vscode-power-mode", // Power Mode
+    "WakaTime.vscode-wakatime", // WakaTime
+  ]
+}

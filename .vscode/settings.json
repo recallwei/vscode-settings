@@ -1,0 +1,281 @@
+{
+  /* cSpell:disable */
+
+  /* Debug */
+  "debug.onTaskErrors": "debugAnyway",
+
+  /* Diff Editor */
+  "diffEditor.codeLens": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  /* Editor */
+  // Display
+  "editor.fontFamily": "Input Mono, Fira Code, '微软雅黑', monospace",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+  "editor.fontSize": 14.5,
+  "editor.rulers": [120],
+  // Formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+  // Others
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "on",
+  "editor.linkedEditing": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.mouseWheelZoom": true,
+  "editor.quickSuggestions": { "strings": true },
+  "editor.renderWhitespace": "boundary",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.allowedLocales": { "zh-hans": true },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          // "comment",
+          "keyword",
+          "storage.modifier",
+          "storage.type.class.js",
+          "storage.type.js"
+        ],
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "scope": ["keyword.control.conditional", "keyword.operator", "comment"],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+
+  /* Explorer */
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "readme*": "authors*, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors*, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
+    ".env": "*.env, .env.*, .envrc, env.d.ts",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "shims.d.ts": "*.d.ts",
+    ".eslintrc.*": ".eslintignore",
+    ".prettierrc.*": ".prettierignore",
+    "package.json": "pnpm-lock.yaml, pnpm-workspace.yaml"
+  },
+
+  /* Extensions */
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": true,
+
+  /* Files */
+  "files.associations": {
+    "*.css": "css",
+    "*.mjs": "javascript",
+    ".env.local": "properties",
+    ".env.development.local": "properties",
+    ".env.production": "properties",
+    ".env.development": "properties",
+    "manifest.json": "jsonc", // uniapp 可以添加注释
+    "pages.json": "jsonc" // uniapp 可以添加注释
+  },
+  "files.autoGuessEncoding": true,
+  "files.eol": "\n", // 文件换行模式：默认选择 LF
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+
+  /* Git Config */
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.untrackedChanges": "separate",
+
+  /* Search */
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
+
+  /* Security */
+  "security.workspace.trust.untrustedFiles": "open",
+
+  /* Terminal Config */
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.env.osx": { "FIG_NEW_SESSION": "1" },
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+
+  /* Window */
+  "window.commandCenter": true,
+  "window.autoDetectColorScheme": true,
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "window.nativeTabs": true, // Only works on MacOS
+
+  /* Workbench */
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula",
+  "workbench.preferredLightColorTheme": "Dracula Soft",
+  "workbench.preferredDarkColorTheme": "Dracula",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5,
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "right",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+
+  /* ESLint */
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.quiet": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+
+  /* Prettier */
+  "prettier.arrowParens": "always",
+  "prettier.bracketSameLine": false,
+  "prettier.bracketSpacing": true,
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.enable": false, // Only use Prettier for manually formatting
+  "prettier.endOfLine": "lf",
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.jsxSingleQuote": false,
+  "prettier.printWidth": 120,
+  "prettier.proseWrap": "preserve",
+  "prettier.quoteProps": "as-needed",
+  "prettier.semi": false,
+  "prettier.singleAttributePerLine": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "none",
+  "prettier.useTabs": false,
+  "prettier.vueIndentScriptAndStyle": false,
+
+  /* GitHub Copilot */
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+
+  /* CSpell */
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en,en-US",
+
+  /* CSS */
+  "css.lint.hexColorLength": "ignore",
+
+  /* Typescript */
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+
+  /* Volar */
+  "volar.autoCompleteRefs": false,
+  "volar.codeLens.pugTools": false,
+  "volar.codeLens.scriptSetupTools": true,
+  "volar.completion.preferredTagNameCase": "pascal",
+
+  /* Tailwind CSS */
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+
+  /* Inline Fold */
+  "inlineFold.autoFold": false,
+
+  /* Azure */
+  "azure.cloud": "AzureChinaCloud",
+
+  /* Powermode */
+  "powermode.combo.counterSize": 1,
+  "powermode.combo.location": "off",
+  "powermode.combo.timerEnabled": "show",
+  "powermode.enabled": true,
+  "powermode.shake.intensity": 1,
+  "powermode.shake.enabled": false,
+
+  /* Material Icon Theme */
+  "material-icon-theme.activeIconPack": "vue_vuex",
+  "material-icon-theme.folders.color": "#42a5f5",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.hidesExplorerArrows": false,
+  "material-icon-theme.saturation": 1,
+
+  /* TODO Highlight */
+  "todohighlight.isEnable": true,
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "#fff",
+      "backgroundColor": "#50c878",
+      "isWholeLine": true
+    },
+    {
+      "text": "TODO:",
+      "color": "#000",
+      "isWholeLine": true
+    },
+    {
+      "text": "HACK:",
+      "color": "#fff",
+      "backgroundColor": "purple",
+      "isWholeLine": true
+    },
+    {
+      "text": "DEPRECATED:",
+      "color": "#fff",
+      "backgroundColor": "red",
+      "isWholeLine": true
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}
