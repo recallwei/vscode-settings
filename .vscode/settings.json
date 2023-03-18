@@ -146,10 +146,10 @@
   /* Workbench */
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Dracula",
+  "workbench.panel.defaultLocation": "left",
   "workbench.preferredLightColorTheme": "Dracula Soft",
   "workbench.preferredDarkColorTheme": "Dracula",
   "workbench.productIconTheme": "icons-carbon",
-  "workbench.panel.defaultLocation": "right",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.limit.enabled": true,
