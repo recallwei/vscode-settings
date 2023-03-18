@@ -16,10 +16,11 @@
   "editor.rulers": [120],
   // Formatter
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
     "source.organizeImports": false
   },
   // Others
@@ -146,7 +147,7 @@
   /* Workbench */
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Dracula",
-  "workbench.panel.defaultLocation": "left",
+  "workbench.panel.defaultLocation": "right",
   "workbench.preferredLightColorTheme": "Dracula Soft",
   "workbench.preferredDarkColorTheme": "Dracula",
   "workbench.productIconTheme": "icons-carbon",
@@ -183,7 +184,7 @@
   "prettier.bracketSameLine": false,
   "prettier.bracketSpacing": true,
   "prettier.embeddedLanguageFormatting": "auto",
-  "prettier.enable": false, // Only use Prettier for manually formatting
+  "prettier.enable": true,
   "prettier.endOfLine": "lf",
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.jsxSingleQuote": false,
@@ -255,12 +256,12 @@
       "text": "NOTE:",
       "color": "#fff",
       "backgroundColor": "#50c878",
-      "isWholeLine": true
+      "isWholeLine": false
     },
     {
       "text": "TODO:",
       "color": "#000",
-      "isWholeLine": true
+      "isWholeLine": false
     },
     {
       "text": "HACK:",
@@ -274,8 +275,5 @@
       "backgroundColor": "red",
       "isWholeLine": true
     }
-  ],
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  ]
 }
