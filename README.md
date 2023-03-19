@@ -6,7 +6,6 @@ I will update this repository from time to time.
 
 - `settings.json` - VSCode settings
 - `extension.json` - VSCode extensions
-- `global.code-snippets` - VSCode code snippets
 
 ## License
 
