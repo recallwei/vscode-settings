@@ -1,5 +1,7 @@
 {
   "recommendations": [
+    // Personal
+    "brucesong.code-magician", // Code Magician: JavaScript, React, Vue Code Snippets
     // Theme
     "antfu.icons-carbon", // Carbon Icons
     "dracula-theme.theme-dracula", // Dracula Theme
@@ -54,6 +56,6 @@
     "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
     // Up To You
     "hoovercj.vscode-power-mode", // Power Mode
-    "WakaTime.vscode-wakatime", // WakaTime
+    "WakaTime.vscode-wakatime" // WakaTime
   ]
 }
