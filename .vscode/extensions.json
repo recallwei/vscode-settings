@@ -28,6 +28,7 @@
     "shardulm94.trailing-spaces", // 末尾空格
     "pflannery.vscode-versionlens", // 版本提示
     "tomoki1207.pdf", // PDF 预览
+    "pnp.polacode", // 代码快照
     // Markdown
     "DavidAnson.vscode-markdownlint", // Markdown Lint
     "unifiedjs.vscode-mdx", // MDX
