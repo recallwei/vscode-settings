@@ -1,62 +1,55 @@
 {
   "recommendations": [
-    // Personal
-    "brucesong.code-magician", // Code Magician: JavaScript, React, Vue Code Snippets
-    // Theme
-    "antfu.icons-carbon", // Carbon Icons
-    "dracula-theme.theme-dracula", // Dracula Theme
-    "PKief.material-icon-theme", // Material Icon Theme
-    // Editor
-    "MS-CEINTL.vscode-language-pack-zh-hans", // 编译器中文语言包
-    // Better Working
-    "formulahendry.auto-close-tag", // 自动闭合标签
-    "steoates.autoimport", // 自动导入
-    "formulahendry.auto-rename-tag", // 自动重命名标签
-    "streetsidesoftware.code-spell-checker", // 拼写检查
-    "naumovs.color-highlight", // 颜色高亮
-    "bierner.color-info", // 颜色信息
-    "usernamehw.errorlens", // 错误提示
-    "donjayamanne.githistory", // Git 历史
-    "GitHub.copilot", // GitHub Copilot
-    "kisstkondoros.vscode-gutter-preview", // 图片预览
-    "wix.vscode-import-cost", // 导入包大小
-    "oderwat.indent-rainbow", // 缩进彩虹
-    "moalamri.inline-fold", // 折叠内联样式
-    "christian-kohler.path-intellisense", // 路径智能提示
-    "cipchk.cssrem", // px 转 rem
-    "wayou.vscode-todo-highlight", // TODO 高亮
-    "shardulm94.trailing-spaces", // 末尾空格
-    "pflannery.vscode-versionlens", // 版本提示
-    "tomoki1207.pdf", // PDF 预览
-    "pnp.polacode", // 代码快照
-    // Markdown
-    "DavidAnson.vscode-markdownlint", // Markdown Lint
-    "unifiedjs.vscode-mdx", // MDX
-    //HTML
-    "ecmel.vscode-html-css", // HTML CSS Support
-    // JavaScript
-    "mgmcdermott.vscode-language-babel", // Babel
-    "mikestead.dotenv", // .env
-    // React
-    "clinyong.vscode-css-modules", // CSS Modules
-    // Vue
-    "Vue.vscode-typescript-vue-plugin", // TypeScript Vue Plugin
-    "Vue.volar", // Volar
-    // Frameworks
     "astro-build.astro-vscode", // Astro
-    "Prisma.prisma", // Prisma
-    // Others
-    "EditorConfig.EditorConfig", // Editor Config
+    "formulahendry.auto-close-tag", // Auto Close Tag
+    "steoates.autoimport", // Auto Import
+    "formulahendry.auto-rename-tag", // Auto Rename Tag
+    "mgmcdermott.vscode-language-babel", // Babel JavaScript
+    "aaron-bond.better-comments", // Better Comments
+    "antfu.icons-carbon", // Carbon Product Icons
+    "MS-CEINTL.vscode-language-pack-zh-hans", // Chinese Language Pack For VSCode
+    "BruceSong.code-magician", // Code Magician
+    "streetsidesoftware.code-spell-checker", // Code Spell Checker
+    "naumovs.color-highlight", // Code Highlight
+    "bierner.color-info", // Color Info
+    "clinyong.vscode-css-modules", // CSS Modules
+    "ms-vscode-remote.remote-containers", // Dev Containers
+    "ms-azuretools.vscode-docker", // Docker
+    "mikestead.dotenv", // DotENV
+    "dracula-theme.theme-dracula", // Dracula Official
+    "EditorConfig.EditorConfig", // EditorConfig For VSCode
+    "usernamehw.errorlens", // Error Lens
     "dbaeumer.vscode-eslint", // ESLint
-    "vunguyentuan.vscode-postcss", // PostCSS IntelliSense And Highlight
-    "csstools.postcss", // PostCSS
+    "mhutchie.git-graph", // Git Graph
+    "donjayamanne.githistory", // Git History
+    "GitHub.copilot", // GitHub Copilot
+    "ecmel.vscode-html-css", // HTML CSS Support
+    "kisstkondoros.vscode-gutter-preview", // Image Preview
+    "wix.vscode-import-cost", // Image Cost
+    "oderwat.indent-rainbow", // Indent Rainbow
+    "moalamri.inline-fold", // Inline Fold
+    "ms-vscode.vscode-typescript-next", // JavaScript And TypeScript Nightly
+    "DavidAnson.vscode-markdownlint", // MarkdownLint
+    "PKief.material-icon-theme", // Material Icon Theme
+    "unifiedjs.vscode-mdx", // MDX
+    "christian-kohler.path-intellisense", // Path Intellisense
+    "vunguyentuan.vscode-postcss", // PostCSS Intellisense And Highlighting
+    "csstools.postcss", // PostCSS Language Support
+    "hoovercj.vscode-power-mode", // Power Mode
     "esbenp.prettier-vscode", // Prettier
-    "rvest.vs-code-prettier-eslint", // Prettier ESLint
+    "yoavbls.pretty-ts-errors", // Pretty TypeScript Errors
+    "Prisma.prisma", // Prisma
+    "cipchk.cssrem", // CSS Rem
+    "rust-lang.rust-analyzer", // Rust Analyzer
     "sibiraj-s.vscode-scss-formatter", // SCSS Formatter
     "stylelint.vscode-stylelint", // Stylelint
-    "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
-    // Up To You
-    "hoovercj.vscode-power-mode", // Power Mode
+    "bradlc.vscode-tailwindcss", // Tailwind CSS Intellisense
+    "wayou.vscode-todo-highlight", // TODO Highlight
+    "be5invis.toml", // TOML Languages Support
+    "shardulm94.trailing-spaces", // Trailing Spaces
+    "Vue.vscode-typescript-vue-plugin", // TypeScript Vue Plugin (Volar)
+    "pflannery.vscode-versionlens", // Version Lens
+    "Vue.volar", // Vue Language Features (Volar)
     "WakaTime.vscode-wakatime" // WakaTime
   ]
 }

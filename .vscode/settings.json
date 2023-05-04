@@ -23,6 +23,15 @@
     "source.fixAll.stylelint": true,
     "source.organizeImports": false
   },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "be5invis.toml"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   // Others
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
@@ -70,15 +79,7 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
-  "explorer.fileNesting.patterns": {
-    "readme*": "authors*, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors*, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
-    ".env": "*.env, .env.*, .envrc, env.d.ts",
-    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
-    "shims.d.ts": "*.d.ts",
-    ".eslintrc.*": ".eslintignore",
-    ".prettierrc.*": ".prettierignore",
-    "package.json": "pnpm-lock.yaml, pnpm-workspace.yaml"
-  },
+  "explorer.fileNesting.patterns": {},
 
   /* Extensions */
   "extensions.autoUpdate": "onlyEnabledExtensions",
@@ -86,8 +87,10 @@
 
   /* Files */
   "files.associations": {
-    "*.css": "css",
+    // "*.css": "css",
+    "*.css": "tailwindcss",
     "*.mjs": "javascript",
+    "*.mdx": "markdown",
     ".env.local": "properties",
     ".env.development.local": "properties",
     ".env.production": "properties",
@@ -148,7 +151,7 @@
   /* Workbench */
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Dracula",
-  "workbench.panel.defaultLocation": "right",
+  "workbench.panel.defaultLocation": "bottom",
   "workbench.preferredLightColorTheme": "Dracula Soft",
   "workbench.preferredDarkColorTheme": "Dracula",
   "workbench.productIconTheme": "icons-carbon",
@@ -173,6 +176,7 @@
     "javascriptreact",
     "typescriptreact",
     "vue",
+    "astro",
     "html",
     "markdown",
     "json",
@@ -199,18 +203,21 @@
   "prettier.trailingComma": "none",
   "prettier.useTabs": false,
   "prettier.vueIndentScriptAndStyle": false,
+  "prettier.documentSelectors": ["**/*.astro"],
 
   /* GitHub Copilot */
   "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
+    "*": false,
     "plaintext": false,
-    "markdown": true
+    "markdown": true,
+    "scminput": false,
+    "yaml": false
   },
 
   /* CSpell */
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
+  "cSpell.enableFiletypes": ["astro"],
 
   /* CSS */
   "css.lint.hexColorLength": "ignore",
@@ -218,16 +225,11 @@
   /* Typescript */
   "typescript.tsdk": "node_modules\\typescript\\lib",
 
-  /* Volar */
-  "volar.autoCompleteRefs": false,
-  "volar.codeLens.pugTools": false,
-  "volar.codeLens.scriptSetupTools": true,
-  "volar.completion.preferredTagNameCase": "pascal",
-
   /* Tailwind CSS */
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "class:list"],
 
   /* Inline Fold */
   "inlineFold.autoFold": false,
