@@ -1,4 +1,5 @@
 {
+  // Total: 52
   "recommendations": [
     "astro-build.astro-vscode", // Astro
     "formulahendry.auto-close-tag", // Auto Close Tag
@@ -20,6 +21,7 @@
     "EditorConfig.EditorConfig", // EditorConfig For VSCode
     "usernamehw.errorlens", // Error Lens
     "dbaeumer.vscode-eslint", // ESLint
+    "withfig.fig", // Fig
     "mhutchie.git-graph", // Git Graph
     "donjayamanne.githistory", // Git History
     "GitHub.copilot", // GitHub Copilot
