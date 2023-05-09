@@ -1,5 +1,5 @@
 {
-  // Total: 52
+  // Total: 53
   "recommendations": [
     "astro-build.astro-vscode", // Astro
     "formulahendry.auto-close-tag", // Auto Close Tag
@@ -11,6 +11,7 @@
     "MS-CEINTL.vscode-language-pack-zh-hans", // Chinese Language Pack For VSCode
     "BruceSong.code-magician", // Code Magician
     "streetsidesoftware.code-spell-checker", // Code Spell Checker
+    "huibizhang.codesnap-plus", // CodeSnap-plus
     "naumovs.color-highlight", // Code Highlight
     "bierner.color-info", // Color Info
     "clinyong.vscode-css-modules", // CSS Modules
