@@ -26,6 +26,9 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
   "[toml]": {
     "editor.defaultFormatter": "be5invis.toml"
   },
