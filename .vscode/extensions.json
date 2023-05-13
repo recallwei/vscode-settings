@@ -1,5 +1,5 @@
 {
-  // Total: 53
+  // Total: 55
   "recommendations": [
     "astro-build.astro-vscode", // Astro
     "formulahendry.auto-close-tag", // Auto Close Tag
@@ -11,7 +11,7 @@
     "MS-CEINTL.vscode-language-pack-zh-hans", // Chinese Language Pack For VSCode
     "BruceSong.code-magician", // Code Magician
     "streetsidesoftware.code-spell-checker", // Code Spell Checker
-    "huibizhang.codesnap-plus", // CodeSnap-plus
+    "huibizhang.codesnap-plus", // Code Snap Plus
     "naumovs.color-highlight", // Code Highlight
     "bierner.color-info", // Color Info
     "clinyong.vscode-css-modules", // CSS Modules
@@ -45,6 +45,8 @@
     "cipchk.cssrem", // CSS Rem
     "rust-lang.rust-analyzer", // Rust Analyzer
     "sibiraj-s.vscode-scss-formatter", // SCSS Formatter
+    "foxundermoon.shell-format", // Shell Format
+    "timonwong.shellcheck", // Shell Check
     "stylelint.vscode-stylelint", // Stylelint
     "bradlc.vscode-tailwindcss", // Tailwind CSS Intellisense
     "wayou.vscode-todo-highlight", // TODO Highlight
