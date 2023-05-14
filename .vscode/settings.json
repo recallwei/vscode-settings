@@ -29,6 +29,9 @@
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
   "[toml]": {
     "editor.defaultFormatter": "be5invis.toml"
   },
@@ -139,7 +142,9 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "terminal.integrated.env.osx": { "FIG_NEW_SESSION": "1" },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
@@ -153,7 +158,7 @@
 
   /* Workbench */
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Soft",
   "workbench.panel.defaultLocation": "bottom",
   "workbench.preferredLightColorTheme": "Dracula Soft",
   "workbench.preferredDarkColorTheme": "Dracula",
@@ -179,12 +184,12 @@
     "javascriptreact",
     "typescriptreact",
     "vue",
-    "astro",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "json5"
+    "astro"
+    // "html",
+    // "markdown",
+    // "json",
+    // "jsonc",
+    // "json5"
   ],
 
   /* Prettier */
@@ -210,7 +215,7 @@
 
   /* GitHub Copilot */
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": true,
     "scminput": false,
