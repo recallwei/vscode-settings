@@ -10,4 +10,4 @@ I will update this repository from time to time.
 
 ## License
 
-MIT
+[MIT](/LICENSE) License &copy; 2023 [Bruce Song](https://github.com/recallwei)
