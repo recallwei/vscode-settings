@@ -2,7 +2,7 @@
 
 I will update this repository from time to time.
 
-## Files
+## Project Structure
 
 - `.vscode/settings.json` - VSCode settings
 - `.vscode/extension.json` - VSCode extensions

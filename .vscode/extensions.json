@@ -8,7 +8,7 @@
     "mgmcdermott.vscode-language-babel", // Babel JavaScript
     "aaron-bond.better-comments", // Better Comments
     "antfu.icons-carbon", // Carbon Product Icons
-    "MS-CEINTL.vscode-language-pack-zh-hans", // Chinese Language Pack For VSCode
+    "MS-CEINTL.vscode-language-pack-zh-hans", // Chinese Language Pack
     "BruceSong.code-magician", // Code Magician
     "streetsidesoftware.code-spell-checker", // Code Spell Checker
     "huibizhang.codesnap-plus", // Code Snap Plus
@@ -19,7 +19,7 @@
     "ms-azuretools.vscode-docker", // Docker
     "mikestead.dotenv", // DotENV
     "dracula-theme.theme-dracula", // Dracula Official
-    "EditorConfig.EditorConfig", // EditorConfig For VSCode
+    "EditorConfig.EditorConfig", // EditorConfig
     "usernamehw.errorlens", // Error Lens
     "dbaeumer.vscode-eslint", // ESLint
     "withfig.fig", // Fig
@@ -42,13 +42,13 @@
     "esbenp.prettier-vscode", // Prettier
     "yoavbls.pretty-ts-errors", // Pretty TypeScript Errors
     "Prisma.prisma", // Prisma
-    "cipchk.cssrem", // CSS Rem
     "rust-lang.rust-analyzer", // Rust Analyzer
     "sibiraj-s.vscode-scss-formatter", // SCSS Formatter
     "foxundermoon.shell-format", // Shell Format
     "timonwong.shellcheck", // Shell Check
     "stylelint.vscode-stylelint", // Stylelint
     "bradlc.vscode-tailwindcss", // Tailwind CSS Intellisense
+    "tauri-apps.tauri-vscode", // Tauri
     "wayou.vscode-todo-highlight", // TODO Highlight
     "be5invis.toml", // TOML Languages Support
     "shardulm94.trailing-spaces", // Trailing Spaces

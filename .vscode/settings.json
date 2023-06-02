@@ -15,28 +15,72 @@
   "editor.fontSize": 14.5,
   "editor.rulers": [120],
   // Formatter
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true,
     "source.organizeImports": false
   },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[astro]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+  "[prisma]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[toml]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "be5invis.toml"
   },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+  "[shellscript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   // Others
   "editor.accessibilitySupport": "off",
@@ -83,7 +127,7 @@
   /* Explorer */
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.enabled": false,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {},
 
@@ -97,10 +141,7 @@
     "*.css": "tailwindcss",
     "*.mjs": "javascript",
     "*.mdx": "markdown",
-    ".env.local": "properties",
-    ".env.development.local": "properties",
-    ".env.production": "properties",
-    ".env.development": "properties",
+    ".env*": "properties",
     "manifest.json": "jsonc", // uniapp 可以添加注释
     "pages.json": "jsonc" // uniapp 可以添加注释
   },
