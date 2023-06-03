@@ -210,7 +210,7 @@
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
   "workbench.list.smoothScrolling": true,
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
 
