@@ -28,6 +28,7 @@
     "mhutchie.git-graph", // Git Graph
     "donjayamanne.githistory", // Git History
     "GitHub.copilot", // GitHub Copilot
+    "eamodio.gitlens", // GitLens
     "ecmel.vscode-html-css", // HTML CSS Support
     "kisstkondoros.vscode-gutter-preview", // Image Preview
     "wix.vscode-import-cost", // Image Cost
