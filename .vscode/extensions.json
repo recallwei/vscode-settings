@@ -30,6 +30,7 @@
     "GitHub.copilot", // GitHub Copilot
     "eamodio.gitlens", // GitLens
     "ecmel.vscode-html-css", // HTML CSS Support
+    "lokalise.i18n-ally", // i18n Ally
     "kisstkondoros.vscode-gutter-preview", // Image Preview
     "wix.vscode-import-cost", // Image Cost
     "oderwat.indent-rainbow", // Indent Rainbow
