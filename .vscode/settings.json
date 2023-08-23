@@ -9,39 +9,22 @@
   "diffEditor.ignoreTrimWhitespace": false,
 
   /* Editor */
-  // Display
+  /* Display */
   "editor.fontFamily": "Input Mono, Fira Code, '微软雅黑', monospace",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.fontSize": 14.5,
-  "editor.rulers": [120],
-  // Formatter
+  "editor.rulers": [80],
+
+  /* Formatter */
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true,
     "source.organizeImports": false
   },
-  "editor.formatOnSave": true,
-  "[markdown]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
-  },
-  "[json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.formatOnSave": false,
+
+  /* Custom Formatter */
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -62,27 +45,79 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[astro]": {
+  "[markdown]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[graphql]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[astro]": {
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "[prisma]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "[rust]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[toml]": {
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "be5invis.toml"
   },
   "[shellscript]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  // Others
+  "[dockerfile]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[dockercompose]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[nginx]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+  },
+
+  /* Others */
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.find.addExtraSpaceOnTop": false,
@@ -92,20 +127,25 @@
   "editor.linkedEditing": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.mouseWheelZoom": true,
-  "editor.quickSuggestions": { "strings": true, "comments": true },
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": true
+  },
   "editor.renderWhitespace": "boundary",
   "editor.snippetSuggestions": "top",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
-  "editor.unicodeHighlight.allowedLocales": { "zh-hans": true },
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hans": true,
+    "zh-hant": true
+  },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "scope": [
-          // "comment",
           "keyword",
           "storage.modifier",
           "storage.type.class.js",
@@ -139,6 +179,7 @@
   "files.associations": {
     // "*.css": "css",
     "*.css": "tailwindcss",
+    "*.cjs": "javascript",
     "*.mjs": "javascript",
     "*.mdx": "markdown",
     ".env*": "properties",
@@ -154,6 +195,7 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
   "git.untrackedChanges": "separate",
 
   /* Search */
@@ -191,15 +233,16 @@
   "terminal.integrated.tabs.enabled": true,
 
   /* Window */
-  "window.commandCenter": true,
   "window.autoDetectColorScheme": true,
+  "window.commandCenter": true,
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
   "window.nativeTabs": true, // Only works on MacOS
 
   /* Workbench */
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula Soft",
+  "workbench.layoutControl.enabled": false,
   "workbench.panel.defaultLocation": "bottom",
   "workbench.preferredLightColorTheme": "Dracula Soft",
   "workbench.preferredDarkColorTheme": "Dracula",
@@ -218,7 +261,7 @@
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
-  "eslint.quiet": true,
+  "eslint.quiet": false,
   "eslint.validate": [
     "javascript",
     "typescript",
@@ -232,17 +275,23 @@
     // "jsonc",
     // "json5"
   ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "location"
+    }
+  ],
 
   /* Prettier */
+  "prettier.enable": true,
+
   "prettier.arrowParens": "always",
   "prettier.bracketSameLine": false,
   "prettier.bracketSpacing": true,
   "prettier.embeddedLanguageFormatting": "auto",
-  "prettier.enable": true,
   "prettier.endOfLine": "lf",
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.jsxSingleQuote": false,
-  "prettier.printWidth": 120,
+  "prettier.printWidth": 80,
   "prettier.proseWrap": "preserve",
   "prettier.quoteProps": "as-needed",
   "prettier.semi": false,
@@ -251,8 +300,23 @@
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "none",
   "prettier.useTabs": false,
+
+  // Vue
   "prettier.vueIndentScriptAndStyle": false,
+
+  // Astro
   "prettier.documentSelectors": ["**/*.astro"],
+
+  /* i18n ally */
+  "i18n-ally.displayLanguage": "zh",
+  "i18n-ally.extract.autoDetect": true,
+  "i18n-ally.extract.keyMaxLength": 99999,
+  "i18n-ally.annotationMaxLength": 20,
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.theme.annotationMissing": "red",
+  "i18n-ally.theme.annotationMissingBorder": "red",
+  "i18n-ally.theme.annotation": "#6495ED",
+  "i18n-ally.theme.annotationBorder": "#6495ED",
 
   /* GitHub Copilot */
   "github.copilot.enable": {
@@ -278,7 +342,12 @@
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
-  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "class:list"],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list"
+  ],
 
   /* Inline Fold */
   "inlineFold.autoFold": false,
@@ -327,5 +396,8 @@
       "backgroundColor": "red",
       "isWholeLine": true
     }
-  ]
+  ],
+
+  /* Error Lens */
+  "errorLens.enabledDiagnosticLevels": ["error", "info", "warning"]
 }

@@ -1,5 +1,5 @@
 {
-  // Total: 55
+  // Total: 52
   "recommendations": [
     "astro-build.astro-vscode", // Astro
     "formulahendry.auto-close-tag", // Auto Close Tag
@@ -9,15 +9,11 @@
     "aaron-bond.better-comments", // Better Comments
     "antfu.icons-carbon", // Carbon Product Icons
     "MS-CEINTL.vscode-language-pack-zh-hans", // Chinese Language Pack
-    "johnpapa.vscode-cloak", // Cloak
     "BruceSong.code-magician", // Code Magician
     "streetsidesoftware.code-spell-checker", // Code Spell Checker
     "huibizhang.codesnap-plus", // Code Snap Plus
-    "vsls-contrib.codetour", // Code Tour
-    "naumovs.color-highlight", // Code Highlight
-    "bierner.color-info", // Color Info
+    "naumovs.color-highlight", // Color Highlight
     "clinyong.vscode-css-modules", // CSS Modules
-    "ms-vscode-remote.remote-containers", // Dev Containers
     "ms-azuretools.vscode-docker", // Docker
     "mikestead.dotenv", // DotENV
     "dracula-theme.theme-dracula", // Dracula Official
@@ -25,38 +21,35 @@
     "usernamehw.errorlens", // Error Lens
     "dbaeumer.vscode-eslint", // ESLint
     "withfig.fig", // Fig
-    "mhutchie.git-graph", // Git Graph
-    "donjayamanne.githistory", // Git History
     "GitHub.copilot", // GitHub Copilot
-    "eamodio.gitlens", // GitLens
-    "ecmel.vscode-html-css", // HTML CSS Support
+    "GraphQL.vscode-graphql", // GraphQL
+    "GraphQL.vscode-graphql-syntax", // GraphQL Syntax Highlighting
     "lokalise.i18n-ally", // i18n Ally
+    "antfu.iconify", // Iconify IntelliSense
     "kisstkondoros.vscode-gutter-preview", // Image Preview
     "wix.vscode-import-cost", // Image Cost
     "oderwat.indent-rainbow", // Indent Rainbow
     "moalamri.inline-fold", // Inline Fold
-    "ms-vscode.vscode-typescript-next", // JavaScript And TypeScript Nightly
     "DavidAnson.vscode-markdownlint", // MarkdownLint
     "PKief.material-icon-theme", // Material Icon Theme
     "unifiedjs.vscode-mdx", // MDX
+    "william-voyek.vscode-nginx", // Nginx Configuration
+    "ahmadalli.vscode-nginx-conf", // Nginx Configuration Language Support
     "christian-kohler.path-intellisense", // Path Intellisense
-    "vunguyentuan.vscode-postcss", // PostCSS Intellisense And Highlighting
-    "csstools.postcss", // PostCSS Language Support
     "hoovercj.vscode-power-mode", // Power Mode
     "esbenp.prettier-vscode", // Prettier
     "yoavbls.pretty-ts-errors", // Pretty TypeScript Errors
     "Prisma.prisma", // Prisma
     "rust-lang.rust-analyzer", // Rust Analyzer
-    "sibiraj-s.vscode-scss-formatter", // SCSS Formatter
     "foxundermoon.shell-format", // Shell Format
     "timonwong.shellcheck", // Shell Check
-    "stylelint.vscode-stylelint", // Stylelint
     "bradlc.vscode-tailwindcss", // Tailwind CSS Intellisense
     "tauri-apps.tauri-vscode", // Tauri
     "wayou.vscode-todo-highlight", // TODO Highlight
     "be5invis.toml", // TOML Languages Support
     "shardulm94.trailing-spaces", // Trailing Spaces
     "Vue.vscode-typescript-vue-plugin", // TypeScript Vue Plugin (Volar)
+    "antfu.unocss", // UnoCSS
     "pflannery.vscode-versionlens", // Version Lens
     "Vue.volar", // Vue Language Features (Volar)
     "WakaTime.vscode-wakatime" // WakaTime
