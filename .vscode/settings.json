@@ -17,10 +17,10 @@
 
   /* Formatter */
   "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "source.organizeImports": false
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "always",
+    "source.fixAll.stylelint": "never",
+    "source.organizeImports": "never"
   },
   "editor.formatOnSave": false,
 
