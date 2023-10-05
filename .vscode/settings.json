@@ -12,7 +12,7 @@
   /* Display */
   "editor.fontFamily": "Input Mono, Fira Code, '微软雅黑', monospace",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
-  "editor.fontSize": 14.5,
+  "editor.fontSize": 16,
   "editor.rulers": [80],
 
   /* Formatter */
@@ -45,13 +45,19 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[markdown]": {
+  "[svelte]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.trimTrailingWhitespace": false
+  },
   "[mdx]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.trimTrailingWhitespace": false
   },
   "[html]": {
     "editor.formatOnSave": true,
@@ -87,33 +93,34 @@
   },
   "[astro]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "astro-build.astro-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[prisma]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "[rust]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[toml]": {
-    "editor.defaultFormatter": "be5invis.toml"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[shellscript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[dockerfile]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
   "[dockercompose]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
   "[nginx]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
   },
 
@@ -190,6 +197,7 @@
   "files.eol": "\n", // 文件换行模式：默认选择 LF
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
+  "files.trimTrailingWhitespace": true,
 
   /* Git Config */
   "git.autofetch": true,
@@ -240,14 +248,15 @@
   "window.nativeTabs": true, // Only works on MacOS
 
   /* Workbench */
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Soft",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.panel.defaultLocation": "bottom",
   "workbench.preferredLightColorTheme": "Dracula Soft",
   "workbench.preferredDarkColorTheme": "Dracula",
   "workbench.productIconTheme": "icons-carbon",
-  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
@@ -268,7 +277,8 @@
     "javascriptreact",
     "typescriptreact",
     "vue",
-    "astro"
+    "astro",
+    "svelte"
     // "html",
     // "markdown",
     // "json",
@@ -331,22 +341,30 @@
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.enableFiletypes": ["astro"],
+  "cSpell.ignorePaths": ["**/*.code-workspace"],
 
   /* CSS */
   "css.lint.hexColorLength": "ignore",
 
+  /* SCSS */
+  "scss.lint.unknownAtRules": "ignore",
+
   /* Typescript */
   "typescript.tsdk": "node_modules\\typescript\\lib",
+
+  /* Svelte */
+  "svelte.enable-ts-plugin": true,
 
   /* Tailwind CSS */
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
   "tailwindCSS.classAttributes": [
-    "class",
-    "className",
-    "ngClass",
-    "class:list"
+    "class", // Vue
+    "className", // React
+    "ngClass", // Angular
+    "class:list", // Astro
+    "rootClassName" // antd
   ],
 
   /* Inline Fold */
@@ -401,6 +419,7 @@
   /* Error Lens */
   "errorLens.enabledDiagnosticLevels": ["error", "info", "warning"],
 
+  /* Markdownlint */
   "markdownlint.config": {
     // 支持排序列表
     "MD004": false,

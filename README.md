@@ -6,7 +6,7 @@ I will update this repository from time to time.
 
 - `.vscode/settings.json` - VSCode settings
 - `.vscode/extension.json` - VSCode extensions
-- `.markdownlint.json` - Markdown linting rules
+- `.vscode/personal.code-workspace` - VSCode workspace
 
 ## License
 
