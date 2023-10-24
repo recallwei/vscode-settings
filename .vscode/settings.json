@@ -17,8 +17,8 @@
 
   /* Formatter */
   "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
-    "source.fixAll.eslint": "always",
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
     "source.fixAll.stylelint": "never",
     "source.organizeImports": "never"
   },
@@ -42,7 +42,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[vue]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[svelte]": {
@@ -92,7 +92,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[astro]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[prisma]": {
@@ -172,11 +172,24 @@
   },
 
   /* Explorer */
+  "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
-  "explorer.fileNesting.patterns": {},
+  "explorer.fileNesting.patterns": {
+    "dockerfile": ".dockerignore, docker-compose.*, dockerfile*",
+    "readme.md": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors*, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*, todo.md",
+    "vite.config.*": "index.html, vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*",
+    "next.config.*": "vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*, next-env.d.ts, components.json, turbo.json",
+    "nuxt.config.*": "vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*",
+    "astro.config.*": "vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*",
+    "nest-cli.json": ".env.*, .env, ecosystem.config.*",
+    "react-native.config.*": "metro.config.*, jest.config.*, Gemfile, Gemfile.lock, babel.config.*, .watchmanconfig, app.json, tamagui.config.*",
+    "rspress.config.*": "vercel.json, netlify.toml",
+    "package.json": "package-lock.json, pnpm-lock.yaml, pnpm-workspace.yaml, yarn.lock, .prettier*, .editorconfig, .eslint*, .stylelint*, .npmrc, .nvmrc, .lintstaged*, .cspell*, .commitlint*, .gitignore, .gitattributes, nodemon.json, .env*",
+    "tsconfig.base.json": "tsconfig.*.json"
+  },
 
   /* Extensions */
   "extensions.autoUpdate": "onlyEnabledExtensions",
@@ -382,7 +395,7 @@
   "powermode.shake.enabled": false,
 
   /* Material Icon Theme */
-  "material-icon-theme.activeIconPack": "vue_vuex",
+  "material-icon-theme.activeIconPack": "nest",
   "material-icon-theme.folders.color": "#42a5f5",
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.hidesExplorerArrows": false,
@@ -439,5 +452,7 @@
     "MD034": false,
     // 不限制第一行为标题
     "MD041": false
-  }
+  },
+  "react-native-tools.showUserTips": false,
+  "editor.codeActionWidget.includeNearbyQuickFixes": true
 }

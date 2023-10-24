@@ -5,20 +5,32 @@
       "path": "recallwei"
     },
     {
+      "name": "Web Dev Handbook",
+      "path": "web-dev-handbook"
+    },
+    {
       "name": "Wiki",
       "path": "wiki"
+    },
+    {
+      "name": "Taskward V1 Desktop",
+      "path": "taskward-v1-desktop"
     },
     {
       "name": "Taskward",
       "path": "taskward"
     },
     {
+      "name": "Taskward API",
+      "path": "taskward-api"
+    },
+    {
       "name": "Taskward V2",
       "path": "taskward-v2"
     },
     {
-      "name": "Taskward API",
-      "path": "taskward-api"
+      "name": "Taskward V2 API",
+      "path": "taskward-v2-api"
     },
     {
       "name": "Resume Generator",
@@ -41,8 +53,12 @@
       "path": "nuxt-enterprise-demo"
     },
     {
-      "name": "Soya Solar App",
-      "path": "soya-solar-app"
+      "name": "Soya Energy App",
+      "path": "soya-energy-app"
+    },
+    {
+      "name": "Soya Energy Website",
+      "path": "soya-energy-website"
     },
     {
       "name": "What To Eat?",
@@ -65,8 +81,16 @@
       "path": "dolphin-admin-nest"
     },
     {
-      "name": "Dolphin Admin Infra",
-      "path": "dolphin-admin-infra"
+      "name": "Dolphin Admin Core Monorepo",
+      "path": "dolphin-admin-core"
+    },
+    {
+      "name": "@dolphin-admin/utils",
+      "path": "dolphin-admin-core/packages/utils"
+    },
+    {
+      "name": "@dolphin-admin/auto-import",
+      "path": "dolphin-admin-core/plugins/auto-import"
     },
     {
       "name": "Dolphin Admin Internal",
@@ -129,8 +153,8 @@
       "path": "tornado/packages/create-tornado"
     },
     {
-      "name": "Tornado CLI",
-      "path": "tornado/packages/tornado-cli"
+      "name": "Tornado X",
+      "path": "tornado/packages/tornado-x"
     },
     {
       "name": "Code Snippets",
@@ -145,16 +169,8 @@
       "path": "eslint-config"
     },
     {
-      "name": "@brucesong/eslint-config-astro",
-      "path": "eslint-config/packages/eslint-config-astro"
-    },
-    {
       "name": "@brucesong/eslint-config-basic",
       "path": "eslint-config/packages/eslint-config-basic"
-    },
-    {
-      "name": "@brucesong/eslint-config-docusaurus",
-      "path": "eslint-config/packages/eslint-config-docusaurus"
     },
     {
       "name": "@brucesong/eslint-config-ts",
@@ -165,12 +181,24 @@
       "path": "eslint-config/packages/eslint-config-react"
     },
     {
+      "name": "@brucesong/eslint-config-vue",
+      "path": "eslint-config/packages/eslint-config-vue"
+    },
+    {
       "name": "@brucesong/eslint-config-react-native",
       "path": "eslint-config/packages/eslint-config-react-native"
     },
     {
-      "name": "@brucesong/eslint-config-vue",
-      "path": "eslint-config/packages/eslint-config-vue"
+      "name": "@brucesong/eslint-config-next",
+      "path": "eslint-config/packages/eslint-config-next"
+    },
+    {
+      "name": "@brucesong/eslint-config-astro",
+      "path": "eslint-config/packages/eslint-config-astro"
+    },
+    {
+      "name": "@brucesong/eslint-config-docusaurus",
+      "path": "eslint-config/packages/eslint-config-docusaurus"
     },
     {
       "name": "GeoJSON",
@@ -215,6 +243,10 @@
     {
       "name": "React Native CLI TS Starter Template",
       "path": "react-native-cli-ts-starter-template"
+    },
+    {
+      "name": "Rspress Starter Template",
+      "path": "rspress-starter-template"
     }
   ],
   "settings": {
@@ -223,8 +255,10 @@
       "web/src/locales",
       "web/src/utils/lang",
       "../react-native-cli-ts-starter-template/src/locales",
-      "../dolphin-admin-react/src/locales"
+      "../dolphin-admin-react/src/locales",
+      "../soya-solar-app/src/locales"
     ],
-    "references.preferredLocation": "peek"
+    "references.preferredLocation": "view",
+    "typescript.tsdk": "node_modules/typescript/lib"
   }
 }
