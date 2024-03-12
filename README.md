@@ -6,7 +6,6 @@ I will update this repository from time to time.
 
 - `.vscode/settings.json` - VSCode settings
 - `.vscode/extension.json` - VSCode extensions
-- `.vscode/personal.code-workspace` - VSCode workspace
 
 ## License
 

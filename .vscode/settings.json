@@ -6,20 +6,21 @@
 
   /* Diff Editor */
   "diffEditor.codeLens": true,
-  "diffEditor.ignoreTrimWhitespace": false,
 
   /* Editor */
   /* Display */
-  "editor.fontFamily": "Input Mono, Fira Code, '微软雅黑', monospace",
-  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+  "editor.fontFamily": "FiraCode Nerd Font, '圆体-简', monospace",
+  "editor.fontLigatures": true,
+  // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.fontSize": 16,
-  "editor.rulers": [80],
+  "editor.rulers": [100],
 
   /* Formatter */
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
+    "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "never",
+    "source.fixAll.sortJSON": "never",
     "source.organizeImports": "never"
   },
   "editor.formatOnSave": false,
@@ -42,7 +43,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[vue]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[svelte]": {
@@ -103,6 +104,10 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
+  "[csharp]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
   "[toml]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -123,10 +128,14 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
   },
+  "[dart]": {
+    "editor.formatOnSave": true
+  },
 
   /* Others */
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionWidget.includeNearbyQuickFixes": true,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
@@ -150,6 +159,26 @@
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
     "textMateRules": [
       {
         "scope": [
@@ -178,17 +207,18 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "dockerfile": ".dockerignore, docker-compose.*, dockerfile*",
+    "dockerfile": ".dockerignore, docker-compose.*, dockerfile*,compose*",
     "readme.md": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors*, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*, todo.md",
-    "vite.config.*": "index.html, vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*",
+    "vite.config.*": "index.html, vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*, nginx.conf, .drone.*, tsr.config.json, vitest.config.*, cypress.config.*",
     "next.config.*": "vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*, next-env.d.ts, components.json, turbo.json",
     "nuxt.config.*": "vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*",
     "astro.config.*": "vercel.json, netlify.toml, .env.*, .env, postcss.config.*, tailwind.config.*",
-    "nest-cli.json": ".env.*, .env, ecosystem.config.*",
+    "nest-cli.json": ".env.*, .env, ecosystem.config.*, .swcrc, nginx.conf, .drone.*",
     "react-native.config.*": "metro.config.*, jest.config.*, Gemfile, Gemfile.lock, babel.config.*, .watchmanconfig, app.json, tamagui.config.*",
-    "rspress.config.*": "vercel.json, netlify.toml",
-    "package.json": "package-lock.json, pnpm-lock.yaml, pnpm-workspace.yaml, yarn.lock, .prettier*, .editorconfig, .eslint*, .stylelint*, .npmrc, .nvmrc, .lintstaged*, .cspell*, .commitlint*, .gitignore, .gitattributes, nodemon.json, .env*",
-    "tsconfig.base.json": "tsconfig.*.json"
+    "rspress.config.*": "vercel.json, netlify.toml, i18n.json",
+    "package.json": "package-lock.json, pnpm-lock.yaml, pnpm-workspace.yaml, yarn.lock, .prettier*, .editorconfig, .eslint*, .stylelint*, .npmrc, .nvmrc, .lintstaged*, .cspell*, .commitlint*, .gitignore, .gitattributes, nodemon.json, .env*, .renovate*",
+    "tsconfig.base.json": "tsconfig.*.json",
+    "tsconfig.json": "tsconfig.*.json"
   },
 
   /* Extensions */
@@ -197,14 +227,15 @@
 
   /* Files */
   "files.associations": {
-    // "*.css": "css",
-    "*.css": "tailwindcss",
+    "*.css": "css",
     "*.cjs": "javascript",
     "*.mjs": "javascript",
     "*.mdx": "markdown",
-    ".env*": "properties",
-    "manifest.json": "jsonc", // uniapp 可以添加注释
-    "pages.json": "jsonc" // uniapp 可以添加注释
+    ".env*": "dotenv",
+    "manifest.json": "jsonc",
+    "pages.json": "jsonc",
+    "libturbo.h": "c",
+    "turbo.json": "jsonc"
   },
   "files.autoGuessEncoding": true,
   "files.eol": "\n", // 文件换行模式：默认选择 LF
@@ -252,37 +283,36 @@
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.location": "right",
 
   /* Window */
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
-  "window.nativeTabs": true, // Only works on MacOS
-
-  /* Workbench */
+  "window.nativeFullScreen": true,
+  "window.nativeTabs": true,
+  "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Dracula Soft",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.layoutControl.enabled": false,
-  "workbench.panel.defaultLocation": "bottom",
   "workbench.preferredLightColorTheme": "Dracula Soft",
-  "workbench.preferredDarkColorTheme": "Dracula",
+  "workbench.preferredDarkColorTheme": "Dracula Soft",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.panel.defaultLocation": "right",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.pinnedTabsOnSeparateRow": true,
-  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.tabActionLocation": "left",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
   "workbench.list.smoothScrolling": true,
-  "workbench.sideBar.location": "left",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
+  "workbench.sideBar.location": "left",
+  "scm.providerCountBadge": "auto",
 
   /* ESLint */
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
+  "eslint.codeAction.showDocumentation": { "enable": true },
   "eslint.quiet": false,
   "eslint.validate": [
     "javascript",
@@ -298,11 +328,7 @@
     // "jsonc",
     // "json5"
   ],
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
 
   /* Prettier */
   "prettier.enable": true,
@@ -314,7 +340,7 @@
   "prettier.endOfLine": "lf",
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.jsxSingleQuote": false,
-  "prettier.printWidth": 80,
+  "prettier.printWidth": 100,
   "prettier.proseWrap": "preserve",
   "prettier.quoteProps": "as-needed",
   "prettier.semi": false,
@@ -346,9 +372,9 @@
     "*": true,
     "plaintext": false,
     "markdown": true,
-    "scminput": false,
-    "yaml": false
+    "scminput": false
   },
+  "github.copilot.chat.localeOverride": "zh-CN",
 
   /* CSpell */
   "cSpell.allowCompoundWords": true,
@@ -364,6 +390,9 @@
 
   /* Typescript */
   "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
 
   /* Svelte */
   "svelte.enable-ts-plugin": true,
@@ -378,6 +407,11 @@
     "ngClass", // Angular
     "class:list", // Astro
     "rootClassName" // antd
+  ],
+  "tailwindCSS.lint.invalidConfigPath": "ignore",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
 
   /* Inline Fold */
@@ -446,6 +480,7 @@
     "MD024": false,
     // 允许标题尾随标点符号
     "MD026": false,
+    "MD029": false,
     // 允许 HTML 标签
     "MD033": false,
     // 允许链接
@@ -453,6 +488,26 @@
     // 不限制第一行为标题
     "MD041": false
   },
-  "react-native-tools.showUserTips": false,
-  "editor.codeActionWidget.includeNearbyQuickFixes": true
+
+  "sortJSON.contextMenu": {
+    "sortJSON": true,
+    "sortJSONReverse": true,
+    "sortJSONKeyLength": false,
+    "sortJSONKeyLengthReverse": false,
+    "sortJSONAlphaNum": false,
+    "sortJSONAlphaNumReverse": false,
+    "sortJSONValues": false,
+    "sortJSONValuesReverse": false,
+    "sortJSONType": false,
+    "sortJSONTypeReverse": false
+  },
+
+  /* Dart */
+  "dart.flutterSdkPath": "/Users/raipiot/flutter",
+
+  /* C# */
+  "csharp.experimental.debug.hotReload": true,
+
+  /* .NET */
+  "dotenv.enableAutocloaking": false
 }

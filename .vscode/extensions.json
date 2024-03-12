@@ -1,57 +1,50 @@
 {
-  // Total: 52
   "recommendations": [
     "astro-build.astro-vscode", // Astro
-    "formulahendry.auto-close-tag", // Auto Close Tag
-    "steoates.autoimport", // Auto Import
-    "formulahendry.auto-rename-tag", // Auto Rename Tag
     "mgmcdermott.vscode-language-babel", // Babel JavaScript
     "aaron-bond.better-comments", // Better Comments
     "antfu.icons-carbon", // Carbon Product Icons
-    "MS-CEINTL.vscode-language-pack-zh-hans", // Chinese Language Pack
-    "BruceSong.code-magician", // Code Magician
     "streetsidesoftware.code-spell-checker", // Code Spell Checker
-    "huibizhang.codesnap-plus", // Code Snap Plus
     "naumovs.color-highlight", // Color Highlight
     "clinyong.vscode-css-modules", // CSS Modules
     "ms-azuretools.vscode-docker", // Docker
-    "mikestead.dotenv", // DotENV
+    "dotenv.dotenv-vscode", // Dotenv Official
     "dracula-theme.theme-dracula", // Dracula Official
     "EditorConfig.EditorConfig", // EditorConfig
     "usernamehw.errorlens", // Error Lens
+    "Tobermory.es6-string-html", // ES6 String HTML
     "dbaeumer.vscode-eslint", // ESLint
-    "withfig.fig", // Fig
+    "mhutchie.git-graph", // Git Graph
+    "donjayamanne.githistory", // Git History
     "GitHub.copilot", // GitHub Copilot
-    "GraphQL.vscode-graphql", // GraphQL
-    "GraphQL.vscode-graphql-syntax", // GraphQL Syntax Highlighting
-    "lokalise.i18n-ally", // i18n Ally
+    "GitHub.copilot-chat", // GitHub Copilot Chat
+    "antfu.goto-alias", // Goto Definition Alias
     "antfu.iconify", // Iconify IntelliSense
     "kisstkondoros.vscode-gutter-preview", // Image Preview
     "wix.vscode-import-cost", // Image Cost
     "oderwat.indent-rainbow", // Indent Rainbow
     "moalamri.inline-fold", // Inline Fold
-    "DavidAnson.vscode-markdownlint", // MarkdownLint
+    "ms-vscode.vscode-typescript-next", // JavaScript and TypeScript Nightly
+    "DavidAnson.vscode-markdownlint", // Markdown Lint
     "PKief.material-icon-theme", // Material Icon Theme
     "unifiedjs.vscode-mdx", // MDX
+    "folke.vscode-monorepo-workspace", // Monorepo Workspace
     "william-voyek.vscode-nginx", // Nginx Configuration
     "ahmadalli.vscode-nginx-conf", // Nginx Configuration Language Support
-    "christian-kohler.path-intellisense", // Path Intellisense
+    "nrwl.angular-console", // Nx Console
+    "vunguyentuan.vscode-postcss", // PostCSS
     "hoovercj.vscode-power-mode", // Power Mode
     "esbenp.prettier-vscode", // Prettier
     "yoavbls.pretty-ts-errors", // Pretty TypeScript Errors
     "Prisma.prisma", // Prisma
-    "rust-lang.rust-analyzer", // Rust Analyzer
-    "foxundermoon.shell-format", // Shell Format
     "timonwong.shellcheck", // Shell Check
     "bradlc.vscode-tailwindcss", // Tailwind CSS Intellisense
     "tauri-apps.tauri-vscode", // Tauri
     "wayou.vscode-todo-highlight", // TODO Highlight
-    "be5invis.toml", // TOML Languages Support
-    "shardulm94.trailing-spaces", // Trailing Spaces
-    "Vue.vscode-typescript-vue-plugin", // TypeScript Vue Plugin (Volar)
-    "antfu.unocss", // UnoCSS
+    "johnsoncodehk.vscode-tsconfig-helper", // TSConfig Helper
     "pflannery.vscode-versionlens", // Version Lens
-    "Vue.volar", // Vue Language Features (Volar)
+    "vitest.explorer", // Vitest
+    "Vue.volar", // Vue
     "WakaTime.vscode-wakatime" // WakaTime
   ]
 }
