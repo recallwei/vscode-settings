@@ -2,6 +2,7 @@
   "recommendations": [
     "astro-build.astro-vscode", // Astro
     "mgmcdermott.vscode-language-babel", // Babel JavaScript
+    "shalldie.background", // Background
     "aaron-bond.better-comments", // Better Comments
     "antfu.icons-carbon", // Carbon Product Icons
     "streetsidesoftware.code-spell-checker", // Code Spell Checker
