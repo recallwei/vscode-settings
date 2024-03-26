@@ -8,14 +8,10 @@
   "diffEditor.codeLens": true,
 
   /* Editor */
-  /* Display */
   "editor.fontFamily": "FiraCode Nerd Font, '圆体-简', monospace",
   "editor.fontLigatures": true,
-  // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.fontSize": 16,
   "editor.rulers": [100],
-
-  /* Formatter */
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
@@ -23,116 +19,8 @@
     "source.fixAll.sortJSON": "never",
     "source.organizeImports": "never"
   },
-  "editor.formatOnSave": false,
-
-  /* Custom Formatter */
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[svelte]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "files.trimTrailingWhitespace": false
-  },
-  "[mdx]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "files.trimTrailingWhitespace": false
-  },
-  "[html]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[less]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[graphql]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[astro]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[prisma]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "[rust]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "[csharp]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  },
-  "[toml]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[shellscript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[dockerfile]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
-  "[dockercompose]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
-  "[nginx]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
-  },
-  "[dart]": {
-    "editor.formatOnSave": true
-  },
-
-  /* Others */
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionWidget.includeNearbyQuickFixes": true,
@@ -185,7 +73,8 @@
           "keyword",
           "storage.modifier",
           "storage.type.class.js",
-          "storage.type.js"
+          "storage.type.js",
+          "variable.language.this"
         ],
         "settings": {
           "fontStyle": "italic bold"
@@ -200,11 +89,34 @@
     ]
   },
 
+  /* Custom */
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[mdx]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[dockerfile][dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+  },
+
   /* Explorer */
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.fileNesting.enabled": true,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.fileNesting.enabled": false,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "dockerfile": ".dockerignore, docker-compose.*, dockerfile*,compose*",
@@ -238,9 +150,10 @@
     "turbo.json": "jsonc"
   },
   "files.autoGuessEncoding": true,
-  "files.eol": "\n", // 文件换行模式：默认选择 LF
+  "files.autoSave": "off",
+  "files.eol": "\n",
   "files.insertFinalNewline": true,
-  "files.simpleDialog.enable": true,
+  "files.simpleDialog.enable": false,
   "files.trimTrailingWhitespace": true,
 
   /* Git Config */
@@ -251,6 +164,14 @@
   "git.untrackedChanges": "separate",
 
   /* Search */
+  "search.smartCase": true,
+  "search.collapseResults": "auto",
+  "search.seedOnFocus": true,
+  "search.showLineNumbers": true,
+  "search.experimental.quickAccess.preserveInput": true,
+  "search.useGlobalIgnoreFiles": true,
+  "search.useParentIgnoreFiles": true,
+  "search.searchEditor.defaultNumberOfContextLines": null,
   "search.exclude": {
     "**/.git": true,
     "**/.github": true,
@@ -260,14 +181,19 @@
     "**/.vscode": true,
     "**/.yarn": true,
     "**/bower_components": true,
-    "**/dist/**": true,
+    "**/dist": true,
     "**/logs": true,
     "**/node_modules": true,
     "**/out/**": true,
     "**/package-lock.json": true,
+    "**/yarn.lock": true,
     "**/pnpm-lock.yaml": true,
     "**/tmp": true,
-    "**/yarn.lock": true
+    "**.log": true,
+    "**/.eslintcache": true,
+    "**/.cspellcache": true,
+    "**/stats.html": true,
+    "**/Cargo.lock": true
   },
 
   /* Security */
@@ -278,7 +204,8 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
+    "FIG_NEW_SESSION": "1",
+    "CW_NEW_SESSION": "1"
   },
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
@@ -509,5 +436,16 @@
   "csharp.experimental.debug.hotReload": true,
 
   /* .NET */
-  "dotenv.enableAutocloaking": false
+  "dotenv.enableAutocloaking": false,
+  "nxConsole.showNodeVersionOnStartup": false,
+
+  /* background */
+  "background.enabled": true,
+  "background.fullscreen": {
+    "images": ["file:///Users/raipiot/downloads/noise/noise-white@1920.png"],
+    "opacity": 0.93,
+    "size": "cover",
+    "position": "center",
+    "interval": 0
+  }
 }
