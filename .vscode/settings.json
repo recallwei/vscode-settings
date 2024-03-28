@@ -8,7 +8,7 @@
   "diffEditor.codeLens": true,
 
   /* Editor */
-  "editor.fontFamily": "FiraCode Nerd Font, '圆体-简', monospace",
+  "editor.fontFamily": "FiraCode Nerd Font, 'LXGW WenKai'",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.rulers": [100],
