@@ -115,7 +115,7 @@
   /* Explorer */
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": false,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -162,6 +162,7 @@
   "git.enableSmartCommit": true,
   "git.ignoreRebaseWarning": true,
   "git.untrackedChanges": "separate",
+  "git.decorations.enabled": true,
 
   /* Search */
   "search.smartCase": true,
@@ -232,6 +233,10 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
+  "workbench.editor.customLabels.enabled": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/components/**": "/${dirname}.${extname}"
+  },
   "workbench.list.smoothScrolling": true,
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
