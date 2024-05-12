@@ -169,7 +169,6 @@
   "search.collapseResults": "auto",
   "search.seedOnFocus": true,
   "search.showLineNumbers": true,
-  "search.experimental.quickAccess.preserveInput": true,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
   "search.searchEditor.defaultNumberOfContextLines": null,
