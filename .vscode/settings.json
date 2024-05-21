@@ -37,8 +37,12 @@
   },
   "editor.renderWhitespace": "boundary",
   "editor.snippetSuggestions": "top",
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.allowedLocales": {
@@ -114,6 +118,7 @@
 
   /* Explorer */
   "explorer.autoReveal": false,
+  "explorer.compactFolders": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": false,
@@ -171,6 +176,7 @@
   "search.showLineNumbers": true,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
+  "search.quickAccess.preserveInput": true,
   "search.searchEditor.defaultNumberOfContextLines": null,
   "search.exclude": {
     "**/.git": true,
@@ -205,7 +211,8 @@
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1",
-    "CW_NEW_SESSION": "1"
+    "CW_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
   },
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
@@ -223,6 +230,7 @@
   "workbench.colorTheme": "Dracula Soft",
   "workbench.preferredLightColorTheme": "Dracula Soft",
   "workbench.preferredDarkColorTheme": "Dracula Soft",
+  "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.panel.defaultLocation": "right",
   "workbench.productIconTheme": "icons-carbon",
@@ -324,6 +332,19 @@
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.suggest.autoImports": true,
+
+  /* JavaScript */
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "javascript.inlayHints.parameterNames.enabled": "none",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.suggest.autoImports": true,
 
   /* Svelte */
   "svelte.enable-ts-plugin": true,
@@ -443,6 +464,11 @@
   "dotenv.enableAutocloaking": false,
   "nxConsole.showNodeVersionOnStartup": false,
 
+  /* Vue */
+  "vue.inlayHints.missingProps": true,
+  "vue.autoInsert.dotValue": true,
+  "vue.updateImportsOnFileMove.enabled": true,
+
   /* background */
   "background.enabled": true,
   "background.fullscreen": {
@@ -451,5 +477,8 @@
     "size": "cover",
     "position": "center",
     "interval": 0
-  }
+  },
+
+  /* Prisma */
+  "prisma.showPrismaDataPlatformNotification": false
 }
